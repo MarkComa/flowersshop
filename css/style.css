@@ -694,4 +694,8 @@ body {
   .slider__btn__img {
     display: none;
   }
+  
+  .modal__btn {
+  padding: 30px 40px;
+  }
 }
