@@ -73,4 +73,27 @@ $("#review-1").on('click', function() {
   });
 
 });
+
+// замена классов при нажатии все цветы     
+  $("#viewmore").on('click', function(){
+    document.querySelectorAll('[data-more]')
+    $('[data-more]').toggleClass('d-none')
+    console.log(1)
+  });
+
+  // функционирование кнопок + и - 
+  $('#minus').click(function () {
+    var $input = $(this).parent().find('#input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('#plus').click(function () {
+    var $input = $(this).parent().find('#input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
 });
