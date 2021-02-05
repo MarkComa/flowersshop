@@ -121,6 +121,8 @@ body {
   font-weight: 500;
   letter-spacing: 0.34px;
   text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 auto;
 }
 
 .hero__subtitle {
@@ -129,6 +131,8 @@ body {
   font-weight: 300;
   letter-spacing: 0.18px;
   text-transform: uppercase;
+  max-width: 590px;
+  margin: 0 auto;
 }
 
 .hero__subtitle--medium {
@@ -182,8 +186,6 @@ body {
   flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
-
-  margin-right: 50px;
 }
 
 .reviews__image1 {
@@ -352,6 +354,7 @@ body {
   text-align: center;
   border: 3px solid #fff;
 }
+
 .card__title {
   margin-top: 23px;
 
@@ -361,7 +364,7 @@ body {
 }
 .card__label {
   display: block;
-  margin-top: 20px;
+  margin: 20px auto;
 
   font-size: 14px;
   letter-spacing: 0.14px;
@@ -519,6 +522,9 @@ body {
 .footer__nav__item {
   margin-right: 30px;
 }
+.footer__nav__item:last-child {
+  margin-right: 0;
+}
 .footer__nav__link {
   color: #fff;
   font-size: 18px;
@@ -564,4 +570,127 @@ body {
 }
 .footer__link {
   color: #101010;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__title {
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+.modal__input {
+  display: block;
+  padding: 10px;
+
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.modal__btn {
+  display: block;
+  padding: 30px 65px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background-color: #ff2e55;
+
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background-color 0.2s linear;
+}
+
+.modal__btn:focus {
+  outline: none;
+}
+
+.modal__btn:hover {
+  background-color: #c72341;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header__contacts {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .hero__btn {
+    padding: 20px 40px;
+  }
+  .colors {
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .offer {
+    padding: 50px 0;
+  }
+
+  .offer__title {
+    font-size: 24px;
+  }
+
+  .offer__link {
+    font-size: 16px;
+  }
+  .offer__phone {
+    font-size: 26px;
+  }
+  .offer__label {
+    margin-top: 30px;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__down {
+    text-align: center;
+  }
+
+  .footer__description {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .footer__authors {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .reviews__text {
+    font-size: 14px;
+  }
+  .reviews__link {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .reviews-slide {
+    padding: 0 20px;
+  }
+  .slider__btn__img {
+    display: none;
+  }
 }
