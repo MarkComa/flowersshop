@@ -2,9 +2,9 @@
 ### Выполнил проект: Абрамов Александр
 
 ## Технологии
--HTML
--CSS
--Bootstrap
--Fansybox
--Swiperjs
--Jquery
+- HTML
+- CSS
+- Bootstrap
+- Fansybox
+- Swiperjs
+- Jquery
